@@ -1,0 +1,180 @@
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+textarea, input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #666;
+  font-weight: bold;
+  position: relative;
+}
+
+.or-divider:before, .or-divider:after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  top: 50%;
+  width: 45%;
+}
+
+.or-divider:before {
+  right: 55%;
+}
+
+.or-divider:after {
+  left: 55%;
+}
+
+.detect-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.detect-button:hover {
+  background-color: #45a049;
+}
+
+.detect-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #fde8e8;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.result-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border-left: 5px solid;
+}
+
+.result-container.real {
+  border-color: #4CAF50;
+}
+
+.result-container.fake {
+  border-color: #f44336;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.prediction-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.result-container.real .prediction-badge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.result-container.fake .prediction-badge {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.confidence {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.model-results {
+  margin: 1.5rem 0;
+}
+
+.model-results h4 {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.model-results ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.model-results li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.processed-text {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ddd;
+}
+
+.processed-text h4 {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.processed-text p {
+  color: #666;
+  font-style: italic;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
